@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="order by dede58.com/" />
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit"><!--360默认急速模式打开-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta name="full-screen" content="yes">
+    <link rel="stylesheet" href="css/cui.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/less.css" />
+	<link rel="stylesheet" href="css/dasefo.css" /><!--新增css-->
+</head>
+<body class="cssw">
+<div id="hd" >
+    <div class="wp">
+        <div class="logo"><a href="index1"><img src="images/logo.png" alt=""></a></div>
+        <div id="nav">
+            <ul>
+                <li><a href="index.html" >首页</a></li>
+                <li><a href="about.html" >关于阿米巴</a></li>
+                <li><a href="service.html"   >阿米巴服务</a></li>
+                <li><a href="case.html" >阿米巴案例</a></li>
+                <li><a href="news.html" style="color:#29abe2; border-bottom:3px solid #29abe2;">阿米巴动态</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="tel">400-000-0000</div>
+		<div class="tellogin">&nbsp;&nbsp;<a href="login.html">登录/注册</a></div>
+    </div>
+</div>
+<!-- end #hd -->
+<div class="c"></div>
+<div id="m-hd">
+    <a href="index1" class="m-logo"><img src="images/logo.png" alt=""></a>
+    <div class="m-trigger"></div>
+    <ul class="m-nav">
+        <li><a href="index.html" class="v1">首页 </a></li>
+        <li><a href="about.html" class="v1">关于阿米巴</a></li>
+        <li><a href="service.html" class="v1">阿米巴服务</a></li>
+        <li><a href="case.html" class="v1">阿米巴案例</a></li>
+        <li><a href="news.html" class="v1">阿米巴动态</a></li>
+        <li><a href="contact.html" class="v1">联系我们</a></li>
+		<li><a href="login.html" class="v1">注册登录</a></li>
+    </ul>
+</div>
+
+
+ <div class="dr">
+    <div id="ban-in" >
+    <div class="ban-bg"></div>
+  </div>
+
+   <div class="content">
+     <div class="content-chi">
+
+      <div class="head">
+        <h1>关于开源分布式事务中间件Fescar，我们总结了开发者关心的13个问题</h1>
+        <div class="time">
+          <span>|</span>
+          <span>发表于</span>
+          <span>2019-01-03</span>
+          <span>|</span>   
+          <span>作者</span>
+          <span>中间件小姐姐</span>
+          <span>|</span>
+          </div>
+      </div>
+
+      <div class="middle">
+        <p>自从产品经理银时小伙和他的开发小哥们在去年12月发布 Cloud Toolkit（一款 IDE 插件）以来银时小伙和他的开发小哥们在去年12月发布 Cloud Toolkit（一款 IDE 插件）银时小伙和他的开发小哥们在去年12月发布 Cloud Toolkit（一款 IDE 插件）银时小伙和他的开发小哥们在去年12月发布 Cloud Toolkit（一款 IDE 插件），已帮助数以万计的开发者们提高了云上的部署效率，期间，他们还发布了 Contributor Ranking List，和开发者们一同定义、打造好用的 IDE 插件。这一次，开发者张航分享了他和 Cloud Toolkit 的故事。</p>
+        <h3>我怎么爱上这款工具的</h3>
+        <p>3月初，我在浏览阿里云的时候，偶然间看到 Alibaba Cloud Toolkit 的推荐，便随意点开了介绍视频，看完之后顿时来了兴趣。因为我平时工作打包用的是 maven，把包复制出来用 xftp 上传，然后再用 xshell 连接服务器，一顿操作猛如虎，一看效率呜呜呜。有时候小项目的测试环境一天能来来回回打好几个包，非常繁琐，虽然之前公司用过 jenkins，但是其配置过于复杂，加上新公司又是小项目，所以就没使用它，所以一直爬不出打包、部署效率低下的坑。直到我遇上 Cloud Tooklit，看完视频介绍，当时的我内心在呐喊：我的天，还有这种操作！？简单地配置一下服务器，打包发布一气呵成，如行云流水一般，比德芙还要丝滑(手动狗头)。</p>
+        <h3>我最常使用的功能</h3>
+        <p>讲到 Cloud Toolkit 最好用的功能，那必须是一键部署 ECS/Host啦，这个简直是最最最最最最常用，解决了开发部署是最痛痛痛痛痛痛点，原始的打包、上传、发布，一套军体拳打下来虽然虎虎生风，但是总是来回切换软件，切换屏幕，令人非常烦躁，然后就会经常出现下面的对话：</p>
+       
+        <h3>我想对 Cloud Toolkit 团队说</h3>
+        <p>从一开始接触了解 Cloud Toolkit 到最终使用它，整个过程中遇到过很多问题，但是也得益于 Cloud Toolkit 团队，他们时时刻刻站在我们身边，困难和疑惑都得到及时的帮助和解答，比如说：</p>
+      <h3>我认为最烂的功能</h3>
+      
+      <p>目前来说，我觉得 Cloud Toolkit 的整体使用体验良好，没有比较烂的功能，但是其中体验稍微不足的地方，就是在一键部署的配置里一个选择 shell 脚本执行的功能。如果第一次部署配置到 Command，肯定要点击右侧的 Select Command 选择一个执行脚本，但是这里提供的添加是基于服务器上已经存在了脚本，如果能做到真正的编辑、新增，然后再选择，那就更完美了。</p>
+     <div class="m-img"><img src="../../../images/five/o1.jpg" alt="" ></div>
+      <p>如果能做一个帮助程序员给变量或方法起名的插件更好啦，市面上有 codeif，但是我觉得不好用，而且没有 IDEA 插件。简单的需求我都想好啦，首先 IDEA 内热键唤起搜索框，键入中文，下拉展现出最合适匹配的英文按照适用百分比倒叙排列，然后鼠标光标移动到上面可以看到使用该命名的相关开源项目，然后点击开源项目能看到代码缩略图。</p>
+      </div>
+
+
+<div class="ending">
+    <div class="ending-prep ending-item">
+	
+      <a href="news.html"><<拥有2000家门店，他如何晋升为服装界的新宠</a>
+    </div>
+    <div class="ending-next ending-item">
+	<a href="news.html">网站常见问题1分钟定位 - 如何使用阿里云ARMS轻松重现用户浏览器问题 >></a>
+      
+</div>
+
+
+      </div>
+   </div>
+  </div>
+
+<div id="fd" class="index-fd pr">
+    <div class="map-bg3"></div>
+    <div class="wp">
+        <div class="fd-top">
+            <dl>
+                <dt>关于阿米巴</dt>
+                <dd>
+                    <ul class="ul-fd">
+                        <li><a href="">我们是谁</a></li>
+                        <li><a href="">我们服务的客户</a></li>
+                        <li><a href="">我们的团队</a></li>
+                        <li><a href="">客户监控系统</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt>阿米巴服务</dt>
+                <dd>
+                    <ul class="ul-fd">
+                        <li><a href="">网站建设</a></li>
+                        <li><a href="">H5响应式 交互网站</a></li>
+                        <li><a href="">移动端 & 微网站定制</a></li>
+                        <li><a href="">服务流程</a></li>
+                        <li><a href="">行业解决方案</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt>阿米巴案例</dt>
+                <dd>
+                    <ul class="ul-fd ul-fd2">
+                        <li><a href="">移动微站</a></li>
+                        <li><a href="">平台电商</a></li>
+                        <li><a href="">HTML5</a></li>
+                        <li><a href="">企业网站</a></li>
+                        <li><a href="">集团公司</a></li>
+                        <li><a href="">加工制造</a></li>
+                        <li><a href="">酒店餐饮</a></li>
+                        <li><a href="">金融投资</a></li>
+                        <li><a href="">汽车地产</a></li>
+                        <li><a href="">科技电子</a></li>
+                        <li><a href="">影视传媒</a></li>
+                        <li><a href="">生物医疗</a></li>
+                        <li><a href="">教育培训</a></li>
+                        <li><a href="">政府机关</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt>阿米巴动态</dt>
+                <dd>
+                    <ul class="ul-fd">
+                        <li><a href="">公司动态</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt>联系我们</dt>
+                <dd class="pr">
+                    <p><a href="" class="weixin"></a><a href="" class="sina"></a><span class="weixin-pic"><img src="images/ewm.jpg" alt=""></span></p>
+                    <p><b class="tel">400-000-0000</b></p>
+                    <h5>阿米巴服务热线</h5>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="fd-copy">
+        <div class="wp">
+            <p>
+                <span>网络技术（北京）有限公司 Copyright&copy; 2007-2015 </span><a href=""><span>沪ICP备0301xxxx号</span></a> <a href=""></a>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="side">
+    <ul>
+        <li><a href=""><div class="sidebox"><img src="images/side_icon02.png">在线咨询</div></a></li>
+        <li><a href=""><div class="sidebox"><img src="images/side_icon01.png">在线咨询<!-- QQ:16757330 --></div></a></li>
+        <li><a href="javascript:void(0);" ><div class="sidebox"><img src="images/side_icon03.png">4000000000</div></a></li>
+    </ul>
+</div>
+<div class="side2">
+    <ul>
+        <li><a href=""><img src="images/r_icon1.png" alt=""></a><div class="weixin"><em></em><img src="images/ewm.jpg" alt=""></div></li>
+        <li><a href="javascript:goTop();" class="sidetop"><img src="images/r_icon2.png"></a></li>
+    </ul>
+</div>
+<link rel="stylesheet" href="css/animate.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/lib.js"></script>
+<script type="text/javascript" src="js/myanimate.js"></script>
+</body>
+</html>
