@@ -1,0 +1,94 @@
+	
+.sub-nav{
+	/* text-align: center; */
+	margin-bottom: 30px;
+	margin-top: -18px;
+   
+}
+
+.sub-nav ul{
+     display: flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    align-items:center;
+    flex-direction:row;
+}
+.sub-nav ul li{
+	display: inline-block;
+    margin-bottom: 15px;
+	/* margin: 0 18px; */
+	font-size: 16px;
+    background-color: #edecec; 
+    border-radius: 3px;
+    text-align: center;
+        width: 8.5%;
+    height: 40px;
+     text-align: center;
+    line-height: 40px;
+            /* 字体垂直居中 */
+            /* display: table-cell; */
+            vertical-align: middle;
+            margin-left: 7px;
+            margin-right: 7px;
+            
+}
+.sub-nav ul li a{
+	 padding-left: 0px; 
+	display: inline-block;
+    color: #333333;
+}
+
+
+@media screen and (max-width: 1000px){
+.sub-nav ul li{
+    width: 10%;
+}
+}
+
+@media screen and (max-width: 868px){
+    .ul-case li {
+    width: 50%;
+}
+
+.sub-nav ul li{
+    width: 14%;
+    font-size: 14px;
+}
+}
+
+
+@media screen and (max-width: 740px){
+.sub-nav ul li{
+    width: 18%;
+    font-size: 13px;
+    margin-left: 3px;
+            margin-right: 3px;
+}
+}
+
+
+@media screen and (max-width: 568px){
+    .ul-case li {
+    width: 100%;
+}
+
+.sub-nav ul{
+    justify-content:center;
+}
+
+
+.sub-nav ul li{
+    width: 45%;
+    font-size: 12px;
+    margin-left: 3px;
+            margin-right: 3px;
+}
+}
+
+@media screen and (max-width: 468px){
+
+
+.sub-nav ul li{
+    font-size: 11px;
+}
+}

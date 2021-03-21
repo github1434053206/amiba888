@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>后台登录</title>
+<meta name="author" content="DeathGhost" />
+<link rel="stylesheet" type="text/css" href="css/style2.css" tppabs="css/style.css" />
+<link rel="stylesheet" href="css/animate.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<script src="js/jquery.js"></script>
+<script src="js/verificationNumbers.js" tppabs="js/verificationNumbers.js"></script>
+
+<script src="js/Particleground.js" tppabs="js/Particleground.js"></script>
+<script>
+//此html为登录模块
+$(document).ready(function() {
+  //粒子背景特效
+  $('body').particleground({
+    dotColor: '#03cc36',
+    lineColor: '#03cc36'
+  });
+  //验证码
+  createCode();
+   createCode();
+  //测试提交，对接程序删除即可
+  $(".submit_btn").click(function(){
+	  location.href="javascrpt:;"/*tpa=http://***index.html*/;
+	  });
+	  
+});
+
+
+</script>
+</head>
+<body class="animates2">
+<dl class="admin_login animates">
+ <dt >
+  <strong>阿米巴管理后台</strong>
+  <em>Management System</em>
+ </dt>
+ <dd class="user_icon">
+  <input type="text" placeholder="账号" class="login_txtbx"/>
+ </dd>
+ <dd class="pwd_icon">
+  <input type="password" placeholder="密码" class="login_txtbx"/>
+ </dd>
+ <dd class="val_icon">
+  <div class="checkcode">
+    <input type="text" id="J_codetext" placeholder="验证码" maxlength="4" class="login_txtbx">
+    <canvas class="J_codeimg" id="myCanvas" onclick="createCode()">对不起，您的浏览器不支持canvas，请下载最新版浏览器!</canvas>
+  </div>
+  
+ </dd>
+ <dd>
+  <input type="button" value="立即登陆" class="submit_btn" />
+ </dd>
+  <dd>
+  <a href="https://www.amiba.ltd/web/index.php?c=user&a=register&"><input type="button" value="注册账号" class="submit_btn" /></a>
+ </dd>
+ <dd>
+  <p>© 2015-2016 jq22 版权所有</p>
+  <p>陕B2-8998988-1</p>
+ </dd>
+</dl>
+<script type="text/javascript" src="js/loginanimate.js"></script>
+</body>
+</html>
